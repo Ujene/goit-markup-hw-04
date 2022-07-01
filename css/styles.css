@@ -149,8 +149,14 @@ align-items: center;
   fill: var(--link-color);
 }
 
-.contacts-link:hover .icons-header,
-.contacts-link:focus .icons-header{
+.contacts-link:hover .icon-mail,
+.contacts-link:focus .icon-mail{
+  color: var(--link-color);
+  fill: var(--link-color);
+}
+
+.contacts-link:hover .icon-smartphone,
+.contacts-link:focus .icon-smartphone{
   color: var(--link-color);
   fill: var(--link-color);
 }
@@ -164,12 +170,22 @@ align-items: center;
   margin-right: 30px;
 }
 
-.icons-header {
-  width: 16px;
-  height: 12px;
+.icon-mail {
+  /* width: 16px;
+  height: 12px; */
   fill: #757575;
   margin-right: 10px;
+	width: 16px;
+	height: 12px;
 }
+
+.icon-smartphone{
+fill: #757575;
+  margin-right: 10px;
+	width: 10px;
+	height: 16px;
+}
+
 
 /* ========== */
 /* Main Section styles */
@@ -266,13 +282,16 @@ align-items: center;
 .features-icon {
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
   fill: #212121;
 }
 
 .features-icon-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
   background-color: var(--sect-ourteam-bgc);
   border-radius: 4px;
+  height: 120px;
 }
 
 /* What we do Section styles */
@@ -403,18 +422,20 @@ align-items: center;
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  gap: 30px;
+  --items:6;
+  --indent:30px
 }
 
 .clients-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  /* width: 170px; */
   height: 92px;
   outline: 1px solid #afb1b8;
   border-radius: 4px;
 }
+
 
 .icon-clients {
   width: 106px;
